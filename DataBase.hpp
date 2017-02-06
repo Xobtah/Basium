@@ -146,7 +146,7 @@ namespace Basium
         }
         
         // Get the DB's size
-        unsigned int    Size() { return (_db.size()); }
+        unsigned int    Size() const { return (_db.size()); }
 
     private:
         std::map<unsigned int, T>   _db;
